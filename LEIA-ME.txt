@@ -1,0 +1,8 @@
+CATÁLOGO BARTOS
+1. Abra produtos.js e substitua 5511999999999 pelo seu WhatsApp (55 + DDD + número).
+2. Altere a lista PRODUTOS. Para adicionar imagem, coloque arquivo em uma pasta 'imagens' e use imagem: 'imagens/foto.jpg'.
+3. Para testar, abra index.html no navegador.
+4. Para publicar, crie um repositório público no GitHub e envie index.html, produtos.js e a pasta imagens.
+5. Em Settings > Pages, escolha Deploy from a branch, main e / (root). Aguarde o endereço aparecer.
+6. Para atualizar produtos, edite produtos.js no GitHub e faça Commit changes.
+OBS: os arquivos e dados do catálogo publicado ficam públicos; somente quem tiver permissão no repositório pode alterá-los. Não coloque senhas nos arquivos.
