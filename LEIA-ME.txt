@@ -1,8 +1,57 @@
-CATÁLOGO BARTOS
-1. Abra produtos.js e substitua 5511999999999 pelo seu WhatsApp (55 + DDD + número).
-2. Altere a lista PRODUTOS. Para adicionar imagem, coloque arquivo em uma pasta 'imagens' e use imagem: 'imagens/foto.jpg'.
-3. Para testar, abra index.html no navegador.
-4. Para publicar, crie um repositório público no GitHub e envie index.html, produtos.js e a pasta imagens.
-5. Em Settings > Pages, escolha Deploy from a branch, main e / (root). Aguarde o endereço aparecer.
-6. Para atualizar produtos, edite produtos.js no GitHub e faça Commit changes.
-OBS: os arquivos e dados do catálogo publicado ficam públicos; somente quem tiver permissão no repositório pode alterá-los. Não coloque senhas nos arquivos.
+CATÁLOGO BARTOS — VERSÃO 2
+==========================
+
+QUAIS ARQUIVOS ENVIAR
+Envie todos os arquivos abaixo para a RAIZ do repositório Bartos.github.io:
+- index.html
+- admin.html
+- catalogo.js
+- admin.js
+- styles.css
+- catalogo.json
+- LEIA-ME.txt (opcional)
+
+IMPORTANTE: mantenha a pasta "imagens" que já existe no GitHub!
+Não é necessário apagar produtos.js, mas a nova versão do site NÃO utiliza mais esse arquivo.
+
+ONDE ENTRAR
+Catálogo público: https://SEUUSUARIO.github.io/
+Painel administrador: https://SEUUSUARIO.github.io/admin.html
+
+PRIMEIRA ENTRADA (UM POUCO DIFERENTE DO LOGIN COM SENHA)
+1. Entre em https://github.com/settings/personal-access-tokens/new
+2. Crie uma Fine-grained personal access token, por exemplo "Editor Bartos".
+3. Resource owner: selecione o usuário dono do repositório.
+4. Repository access: Only select repositories > Bartos.github.io.
+5. Repository permissions > Contents > Read and write.
+6. Gere o token e copie (o GitHub mostra o valor uma única vez).
+7. Abra admin.html, preencha o usuário GitHub, o repositório e o token.
+8. Edite produtos, categorias, fotos, preços, cores e WhatsApp.
+9. Clique em "Salvar no site". Aguarde a publicação do GitHub Pages.
+
+SEGURANÇA
+- O admin.html é um arquivo público, mas só funciona para editar com token válido.
+- NUNCA compartilhe o token, nem coloque em catalogo.json, produtos.js ou HTML.
+- O token permanece apenas em memória no navegador até sair/recarregar a página.
+- Use apenas em dispositivo confiável, e expiração curta/escopo mínimo.
+- Se o token vazar, revogue-o imediatamente em https://github.com/settings/tokens.
+- GitHub Pages NÃO fornece autenticação nem um banco de dados próprio.
+
+COMO FUNCIONA
+- catalogo.json guarda produtos, categorias e aparência.
+- admin.html edita esse arquivo diretamente pelo GitHub REST API.
+- Ao enviar uma imagem, ela é comprimida para WebP e enviada para imagens/.
+- É preciso clicar "Salvar no site" após editar o produto para atualizar o catálogo.
+- Só aparecem no site os produtos marcados como visíveis.
+- O botão "Eu quero!" abre o WhatsApp configurado, com o nome e código do produto.
+- Fotos removidas de um cadastro permanecem no GitHub, para evitar exclusão acidental.
+
+NOTA
+O GitHub Pages é gratuito para repositórios públicos, mas o conteúdo, inclusive
+imagens e catalogo.json, fica publicamente acessível. Nunca cadastre dados sensíveis.
+
+OBSERVAÇÃO DE ATUALIZAÇÃO
+As alterações que você fez manualmente em produtos.js após a versão inicial
+NÃO são importadas automaticamente, pois esta versão usa catalogo.json.
+Os 5 produtos exibidos na captura anterior, incluindo Kit Família Santa,
+foram usados como dados iniciais. Confira os detalhes após publicar.

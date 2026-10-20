@@ -1,0 +1,67 @@
+{
+  "config": {
+    "marca": "bartos.",
+    "slogan": "Ideias que ganham forma.",
+    "descricao": "Presentes, decoração e produtos criativos feitos em impressão 3D.",
+    "tituloHero": "Coisas incríveis, feitas camada por camada.",
+    "subtituloHero": "Presentes criativos, utilidades e peças únicas. Escolha seu favorito e fale com a gente!",
+    "whatsapp": "5511989792276",
+    "instagram": "",
+    "corPrimaria": "#7545d4",
+    "corDestaque": "#f7e34d",
+    "logo": ""
+  },
+  "categorias": ["Sazonal", "Personalizados", "Casa & Utilidades", "Datas Especiais"],
+  "produtos": [
+    {
+      "id": "BAR-001",
+      "nome": "Kit Família Santa",
+      "categoria": "Sazonal",
+      "descricao": "Um presépio delicado para celebrar o Natal em família.",
+      "preco": "R$ 64,90",
+      "imagens": ["imagens/Familia_santa1.jpeg", "imagens/Familia_santa2.jpeg"],
+      "ativo": true,
+      "destaque": true
+    },
+    {
+      "id": "BAR-002",
+      "nome": "Clipes fofos",
+      "categoria": "Personalizados",
+      "descricao": "Clipes criativos com diferentes formatos.",
+      "preco": "Sob orçamento",
+      "imagens": [],
+      "ativo": true,
+      "destaque": false
+    },
+    {
+      "id": "BAR-003",
+      "nome": "Organizador de cabos",
+      "categoria": "Casa & Utilidades",
+      "descricao": "Organize sua mesa com praticidade.",
+      "preco": "Sob orçamento",
+      "imagens": [],
+      "ativo": true,
+      "destaque": false
+    },
+    {
+      "id": "BAR-004",
+      "nome": "Plaquinha para pet",
+      "categoria": "Personalizados",
+      "descricao": "Personalizada para seu melhor amigo.",
+      "preco": "Sob orçamento",
+      "imagens": [],
+      "ativo": true,
+      "destaque": false
+    },
+    {
+      "id": "BAR-005",
+      "nome": "Decoração natalina",
+      "categoria": "Datas Especiais",
+      "descricao": "Peças especiais para decorar e presentear.",
+      "preco": "Sob orçamento",
+      "imagens": [],
+      "ativo": true,
+      "destaque": false
+    }
+  ]
+}
